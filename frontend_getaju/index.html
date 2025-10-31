@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Tareas - GETAJU</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Gestión de Tareas</h1>
+
+  <!-- 🔹 Formulario de creación -->
+  <section class="task-form">
+    <input type="text" id="nombre" placeholder="Nombre de la tarea" />
+    <select id="prioridad">
+      <option value="Alta">Alta</option>
+      <option value="Media">Media</option>
+      <option value="Baja">Baja</option>
+    </select>
+    <input type="date" id="fecha_limite" />
+    <select id="importancia">
+      <option value="Alta">Alta</option>
+      <option value="Media">Media</option>
+      <option value="Baja">Baja</option>
+    </select>
+    <button id="agregarBtn">Agregar tarea</button>
+  </section>
+
+  <!-- 🔹 Barra de búsqueda -->
+  <section class="filtros">
+    <input type="text" id="buscarNombre" placeholder="Buscar por nombre..." />
+    <select id="filtrarPrioridad">
+      <option value="">Todas las prioridades</option>
+      <option value="Alta">Alta</option>
+      <option value="Media">Media</option>
+      <option value="Baja">Baja</option>
+    </select>
+  </section>
+
+  <ul id="listaTareas"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+li {
+  background: white;
+  border-left: 5px solid #ccc;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priority-Alta { border-color: red; }
+.priority-Media { border-color: orange; }
+.priority-Baja { border-color: green; }
+
+.fecha {
+  color: #7f8c8d;
+  font-size: 13px;
+}
+
+.boton-eliminar {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton-eliminar:hover {
+  background: #c0392b;
+}
+/* ===== Filtros de búsqueda ===== */
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px auto 25px auto;
+  flex-wrap: wrap;
+}
+
+.filtros input, .filtros select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+

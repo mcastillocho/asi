@@ -1,0 +1,22 @@
+{
+  "name": "backend_getaju",
+  "version": "1.0.0",
+  "description": "Servidor backend para el proyecto GETAJU con conexión MySQL",
+  "main": "server_mysql.js",
+  "scripts": {
+    "start": "node server_mysql.js",
+    "dev": "nodemon server_mysql.js"
+  },
+  "author": "Alexander Vega",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
