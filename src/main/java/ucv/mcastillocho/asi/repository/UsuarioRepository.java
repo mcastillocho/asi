@@ -10,5 +10,5 @@ import ucv.mcastillocho.asi.model.entities.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
 
-    Optional<Usuario> findByCorreoAndEstadoIsTrue(String correo);
+    Optional<Usuario> findByCorreoAndActivoIsTrue(String correo);
 }

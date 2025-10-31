@@ -59,7 +59,7 @@ public class Usuario implements UserDetails {
     private LocalDateTime fechaRegistro;
 
     @Column(nullable = false, columnDefinition = "TINYINT(1) DEFAULT 1")
-    private Boolean estado = true;
+    private Boolean activo = true;
 
     // RELACIONES JPA
 
@@ -108,6 +108,6 @@ public class Usuario implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return estado;
+        return activo;
     }
 }

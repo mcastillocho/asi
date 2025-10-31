@@ -42,6 +42,9 @@ public class Equipo {
     @Column(name = "fecha_creacion", nullable = false, updatable = false)
     private LocalDateTime fechaCreacion;
 
+    @Column(nullable = false, columnDefinition = "TINYINT(1) DEFAULT 1")
+    private Boolean activo = true;
+
     // Relación bidireccional con miembros
     @OneToMany(mappedBy = "equipo", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<MiembroEquipo> miembros;

@@ -24,7 +24,7 @@ public class UsuarioService {
         }
 
         // Valida que no haya un usuario con ese correo registrado
-        if (usuarioRepository.findByCorreoAndEstadoIsTrue(registroDTO.getCorreo()).isPresent()) {
+        if (usuarioRepository.findByCorreoAndActivoIsTrue(registroDTO.getCorreo()).isPresent()) {
             throw new Exception("Ya existe un usuario con el correo: " + registroDTO.getCorreo());
         }
 
@@ -39,7 +39,7 @@ public class UsuarioService {
 
         // Establecer valores por defecto del rol y estado
         nuevoUsuario.setRol("USUARIO");
-        nuevoUsuario.setEstado(true);
+        nuevoUsuario.setActivo(true);
 
         // Guarda en la base de datos
         return usuarioRepository.save(nuevoUsuario);

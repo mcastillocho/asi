@@ -2,7 +2,7 @@ package ucv.mcastillocho.asi.model.enums;
 
 public enum RolEquipo {
 
-    CREADOR,
+    LIDER,
     ADMINISTRADOR,
     MIEMBRO;
 
